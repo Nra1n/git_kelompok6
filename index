@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Selamat Datang</title>
+<style>
+  /* Reset dan base style */
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  body, html {
+    height: 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #f0f4f8;
+    color: #222;
+  }
+  /* Header styles */
+  header {
+    background-color: #0d6efd;
+    padding: 12px 24px;
+    display: flex;
+    align-items: center;
+  }
+  nav {
+    display: flex;
+    gap: 24px;
+  }
+  nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+  }
+  nav a:hover,
+  nav a:focus {
+    color: #ffd43b;
+    outline: none;
+  }
+  /* Center content */
+  main {
+    height: calc(100vh - 56px); /* full height minus header */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 16px;
+  }
+  main h1 {
+    font-size: 3rem;
+    margin-bottom: 24px;
+    color: #0d6efd;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.1);
+  }
+  /* Button style */
+  button.more-btn {
+    background-color: #0d6efd;
+    color: white;
+    border: none;
+    padding: 14px 36px;
+    font-size: 1.1rem;
+    font-weight: 700;
+    border-radius: 30px;
+    cursor: pointer;
+    box-shadow: 0 4px 15px rgba(13,110,253,0.4);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  }
+  button.more-btn:hover,
+  button.more-btn:focus {
+    background-color: #0056b3;
+    box-shadow: 0 6px 20px rgba(0,86,179,0.5);
+    outline: none;
+  }
+
+  /* Responsive adjustments */
+  @media (max-width: 600px) {
+    header {
+      padding: 10px 12px;
+    }
+    nav a {
+      font-size: 0.9rem;
+      gap:12px;
+    }
+    main h1 {
+      font-size: 2.2rem;
+      margin-bottom: 20px;
+    }
+    button.more-btn {
+      padding: 12px 28px;
+      font-size: 1rem;
+    }
+  }
+</style>
+</head>
+<body>
+<header>
+  <nav aria-label="Primary">
+    <a href="menu.html">Menu</a>
+    <a href="sitemap.html">Site Map</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</header>
+<main>
+  <h1>Selamat datang!</h1>
+  <a href="more.html" ><button  class="more-btn" type="button">More</button></a>
+</main>
+</body>
+</html>
+

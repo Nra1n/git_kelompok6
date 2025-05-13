@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Menu</title>
+<style>
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 24px;
+    background: #f0f4f8;
+    color: #222;
+  }
+  h1 {
+    color: #0d6efd;
+    margin-bottom: 16px;
+  }
+  p {
+    font-size: 1.1rem;
+    line-height: 1.5;
+  }
+  a.back {
+    display: inline-block;
+    margin-top: 24px;
+    color: #0d6efd;
+    text-decoration: none;
+    font-weight: 600;
+    border-bottom: 2px solid transparent;
+    transition: border-color 0.3s ease;
+  }
+  a.back:hover,
+  a.back:focus {
+    border-color: #0d6efd;
+    outline: none;
+  }
+</style>
+</head>
+<body>
+  <h1>Menu</h1>
+  <p>Ini adalah halaman Menu. Anda dapat menambahkan konten menu di sini sesuai kebutuhan.</p>
+  <a href="index.html" class="back">&larr; Kembali ke Beranda</a>
+</body>
+</html>
+

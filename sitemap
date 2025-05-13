@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Site Map</title>
+<style>
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 24px;
+    background: #f0f4f8;
+    color: #222;
+  }
+  h1 {
+    color: #0d6efd;
+    margin-bottom: 16px;
+  }
+  ul {
+    font-size: 1.1rem;
+    line-height: 1.5;
+    list-style: disc inside;
+  }
+  a.back {
+    display: inline-block;
+    margin-top: 24px;
+    color: #0d6efd;
+    text-decoration: none;
+    font-weight: 600;
+    border-bottom: 2px solid transparent;
+    transition: border-color 0.3s ease;
+  }
+  a.back:hover,
+  a.back:focus {
+    border-color: #0d6efd;
+    outline: none;
+  }
+</style>
+</head>
+<body>
+  <h1>Site Map</h1>
+  <ul>
+    <li><a href="index.html">Beranda</a></li>
+    <li><a href="menu.html">Menu</a></li>
+    <li><a href="sitemap.html">Site Map</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+  <a href="index.html" class="back">&larr; Kembali ke Beranda</a>
+</body>
+</html>

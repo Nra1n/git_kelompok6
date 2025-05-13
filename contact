@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Contact</title>
+<style>
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 24px;
+    background: #f0f4f8;
+    color: #222;
+  }
+  h1 {
+    color: #0d6efd;
+    margin-bottom: 16px;
+  }
+  form {
+    max-width: 400px;
+    margin-top: 8px;
+  }
+  label {
+    display: block;
+    margin-top: 12px;
+    font-weight: 600;
+  }
+  input, textarea {
+    width: 100%;
+    padding: 8px 10px;
+    margin-top: 6px;
+    border: 1.5px solid #ccc;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-family: inherit;
+  }
+  button {
+    margin-top: 16px;
+    background-color: #0d6efd;
+    border: none;
+    padding: 12px 28px;
+    color: white;
+    font-size: 1.1rem;
+    font-weight: 700;
+    border-radius: 28px;
+    cursor: pointer;
+    box-shadow: 0 4px 15px rgba(13,110,253,0.4);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  }
+  button:hover,
+  button:focus {
+    background-color: #0056b3;
+    box-shadow: 0 6px 20px rgba(0,86,179,0.5);
+    outline: none;
+  }
+  a.back {
+    display: inline-block;
+    margin-top: 24px;
+    color: #0d6efd;
+    text-decoration: none;
+    font-weight: 600;
+    border-bottom: 2px solid transparent;
+    transition: border-color 0.3s ease;
+  }
+  a.back:hover,
+  a.back:focus {
+    border-color: #0d6efd;
+    outline: none;
+  }
+
+  /* Kontak info bawah form */
+  .contact-info {
+    margin-top: 40px;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  .contact-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 1.1rem;
+    color: #0d6efd;
+  }
+  .contact-item svg {
+    width: 24px;
+    height: 24px;
+    flex-shrink: 0;
+    fill: #0d6efd;
+  }
+
+  /* Responsive */
+  @media (max-width: 500px) {
+    form, .contact-info {
+      max-width: 100%;
+    }
+    .contact-item {
+      font-size: 1rem;
+      gap: 10px;
+    }
+    .contact-item svg {
+      width: 20px;
+      height: 20px;
+    }
+  }
+</style>
+</head>
+<body>
+  <h1>Contact</h1>
+  <form onsubmit="alert('Terima kasih sudah menghubungi kami!'); return false;">
+    <label for="name">Nama:</label>
+    <input type="text" id="name" name="name" required placeholder="Masukkan nama Anda" />
+    
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required placeholder="Masukkan email Anda" />
+    
+    <label for="message">Pesan:</label>
+    <textarea id="message" name="message" rows="4" required placeholder="Tulis pesan Anda"></textarea>
+    
+    <button type="submit">Kirim</button>
+  </form>
+
+  <div class="contact-info" aria-label="Informasi kontak tambahan">
+    <div class="contact-item">
+      <!-- Icon email -->
+      <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+        <path d="M2 4v16h20V4H2zm18 2v.01L12 13 4 6.01V6h16zm0 12H4v-8l8 6 8-6v8z"/>
+      </svg>
+      <span>email@example.com</span>
+    </div>
+    <div class="contact-item">
+      <!-- Icon telepon -->
+      <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+        <path d="M6.62 10.79a15.91 15.91 0 006.59 6.59l2.2-2.2a1 1 0 011.11-.21 11.05 11.05 0 003.44.55 1 1 0 011 1v3.5a1 1 0 01-1 1A16 16 0 014 6a1 1 0 011-1h3.5a1 1 0 011 1 11.05 11.05 0 00.55 3.44 1 1 0 01-.21 1.11l-2.22 2.24z"/>
+      </svg>
+      <span>+62 812 3456 7890</span>
+    </div>
+  </div>
+
+  <a href="index.html" class="back">&larr; Kembali ke Beranda</a>
+</body>
+</html>
